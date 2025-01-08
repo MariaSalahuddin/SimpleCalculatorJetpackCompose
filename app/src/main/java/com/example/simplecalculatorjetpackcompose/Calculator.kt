@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.sp
 fun Calculator(
     modifier: Modifier = Modifier
 ) {
-    val historyList = remember { mutableStateListOf<String>() }
+    val historyList = remember  { mutableStateListOf<String>() }
     val historyButtonCLicked = remember { mutableStateOf(false) }
     Column(modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
         TopUI(addHistory = { history ->
